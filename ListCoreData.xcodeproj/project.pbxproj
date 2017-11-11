@@ -7,21 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4B8A3C1FB6FC750089C80E /* ListStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A3A1FB6FC750089C80E /* ListStudentsViewController.swift */; };
+		CB4B8A3D1FB6FC750089C80E /* ListStudentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4B8A3B1FB6FC750089C80E /* ListStudentsViewController.xib */; };
+		CB4B8A411FB7041B0089C80E /* ListStudentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A3F1FB7041B0089C80E /* ListStudentsTableViewCell.swift */; };
+		CB4B8A421FB7041B0089C80E /* ListStudentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4B8A401FB7041B0089C80E /* ListStudentsTableViewCell.xib */; };
+		CB4B8A4E1FB7138C0089C80E /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A4C1FB7138C0089C80E /* Models.xcdatamodeld */; };
+		CB4B8A531FB7142C0089C80E /* Students+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A4F1FB7142C0089C80E /* Students+CoreDataClass.swift */; };
+		CB4B8A541FB7142C0089C80E /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A501FB7142C0089C80E /* Students+CoreDataProperties.swift */; };
+		CB4B8A551FB7142C0089C80E /* Class+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A511FB7142C0089C80E /* Class+CoreDataClass.swift */; };
+		CB4B8A561FB7142C0089C80E /* Class+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A521FB7142C0089C80E /* Class+CoreDataProperties.swift */; };
 		CBA9E7331FB685C40042ED0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9E7321FB685C40042ED0D /* AppDelegate.swift */; };
-		CBA9E7351FB685C40042ED0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9E7341FB685C40042ED0D /* ViewController.swift */; };
-		CBA9E7381FB685C40042ED0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E7361FB685C40042ED0D /* Main.storyboard */; };
 		CBA9E73A1FB685C40042ED0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E7391FB685C40042ED0D /* Assets.xcassets */; };
 		CBA9E73D1FB685C40042ED0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E73B1FB685C40042ED0D /* LaunchScreen.storyboard */; };
+		CBA9E74F1FB686EB0042ED0D /* Create.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E74B1FB686EA0042ED0D /* Create.png */; };
+		CBA9E7501FB686EB0042ED0D /* List classes.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E74C1FB686EB0042ED0D /* List classes.png */; };
+		CBA9E7511FB686EB0042ED0D /* List Students.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E74D1FB686EB0042ED0D /* List Students.png */; };
+		CBA9E7521FB686EB0042ED0D /* Update Student.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E74E1FB686EB0042ED0D /* Update Student.png */; };
+		CBA9E7591FB6944D0042ED0D /* ListClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9E7571FB6944D0042ED0D /* ListClassViewController.swift */; };
+		CBA9E75A1FB6944D0042ED0D /* ListClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E7581FB6944D0042ED0D /* ListClassViewController.xib */; };
+		CBA9E75F1FB6950D0042ED0D /* ListClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9E75D1FB6950D0042ED0D /* ListClassCollectionViewCell.swift */; };
+		CBA9E7601FB6950D0042ED0D /* ListClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E75E1FB6950D0042ED0D /* ListClassCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB4B8A3A1FB6FC750089C80E /* ListStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsViewController.swift; sourceTree = "<group>"; };
+		CB4B8A3B1FB6FC750089C80E /* ListStudentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListStudentsViewController.xib; sourceTree = "<group>"; };
+		CB4B8A3F1FB7041B0089C80E /* ListStudentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsTableViewCell.swift; sourceTree = "<group>"; };
+		CB4B8A401FB7041B0089C80E /* ListStudentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListStudentsTableViewCell.xib; sourceTree = "<group>"; };
+		CB4B8A4D1FB7138C0089C80E /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		CB4B8A4F1FB7142C0089C80E /* Students+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB4B8A501FB7142C0089C80E /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB4B8A511FB7142C0089C80E /* Class+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB4B8A521FB7142C0089C80E /* Class+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CBA9E72F1FB685C40042ED0D /* ListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA9E7321FB685C40042ED0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBA9E7341FB685C40042ED0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBA9E7371FB685C40042ED0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBA9E7391FB685C40042ED0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBA9E73C1FB685C40042ED0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBA9E73E1FB685C40042ED0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA9E74B1FB686EA0042ED0D /* Create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Create.png; sourceTree = "<group>"; };
+		CBA9E74C1FB686EB0042ED0D /* List classes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List classes.png"; sourceTree = "<group>"; };
+		CBA9E74D1FB686EB0042ED0D /* List Students.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List Students.png"; sourceTree = "<group>"; };
+		CBA9E74E1FB686EB0042ED0D /* Update Student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Update Student.png"; sourceTree = "<group>"; };
+		CBA9E7571FB6944D0042ED0D /* ListClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListClassViewController.swift; sourceTree = "<group>"; };
+		CBA9E7581FB6944D0042ED0D /* ListClassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListClassViewController.xib; sourceTree = "<group>"; };
+		CBA9E75D1FB6950D0042ED0D /* ListClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBA9E75E1FB6950D0042ED0D /* ListClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListClassCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +65,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4B8A391FB6FC430089C80E /* List Student ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A3A1FB6FC750089C80E /* ListStudentsViewController.swift */,
+				CB4B8A3B1FB6FC750089C80E /* ListStudentsViewController.xib */,
+			);
+			path = "List Student ViewController";
+			sourceTree = "<group>";
+		};
+		CB4B8A3E1FB703F00089C80E /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A3F1FB7041B0089C80E /* ListStudentsTableViewCell.swift */,
+				CB4B8A401FB7041B0089C80E /* ListStudentsTableViewCell.xib */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
 		CBA9E7261FB685C40042ED0D = {
 			isa = PBXGroup;
 			children = (
 				CBA9E7311FB685C40042ED0D /* ListCoreData */,
+				CBA9E74A1FB686900042ED0D /* File Sample */,
 				CBA9E7301FB685C40042ED0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +104,73 @@
 			isa = PBXGroup;
 			children = (
 				CBA9E7321FB685C40042ED0D /* AppDelegate.swift */,
-				CBA9E7341FB685C40042ED0D /* ViewController.swift */,
-				CBA9E7361FB685C40042ED0D /* Main.storyboard */,
+				CBA9E7441FB686120042ED0D /* Model */,
+				CBA9E7451FB686180042ED0D /* Controller */,
+				CBA9E7461FB686250042ED0D /* View */,
 				CBA9E7391FB685C40042ED0D /* Assets.xcassets */,
 				CBA9E73B1FB685C40042ED0D /* LaunchScreen.storyboard */,
 				CBA9E73E1FB685C40042ED0D /* Info.plist */,
 			);
 			path = ListCoreData;
+			sourceTree = "<group>";
+		};
+		CBA9E7441FB686120042ED0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A4C1FB7138C0089C80E /* Models.xcdatamodeld */,
+				CB4B8A4F1FB7142C0089C80E /* Students+CoreDataClass.swift */,
+				CB4B8A501FB7142C0089C80E /* Students+CoreDataProperties.swift */,
+				CB4B8A511FB7142C0089C80E /* Class+CoreDataClass.swift */,
+				CB4B8A521FB7142C0089C80E /* Class+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA9E7451FB686180042ED0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A391FB6FC430089C80E /* List Student ViewController */,
+				CBA9E75B1FB694BF0042ED0D /* List Class ViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA9E7461FB686250042ED0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A3E1FB703F00089C80E /* Table View Cell */,
+				CBA9E75C1FB694D10042ED0D /* Collection View Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA9E74A1FB686900042ED0D /* File Sample */ = {
+			isa = PBXGroup;
+			children = (
+				CBA9E74B1FB686EA0042ED0D /* Create.png */,
+				CBA9E74C1FB686EB0042ED0D /* List classes.png */,
+				CBA9E74D1FB686EB0042ED0D /* List Students.png */,
+				CBA9E74E1FB686EB0042ED0D /* Update Student.png */,
+			);
+			path = "File Sample";
+			sourceTree = "<group>";
+		};
+		CBA9E75B1FB694BF0042ED0D /* List Class ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBA9E7571FB6944D0042ED0D /* ListClassViewController.swift */,
+				CBA9E7581FB6944D0042ED0D /* ListClassViewController.xib */,
+			);
+			path = "List Class ViewController";
+			sourceTree = "<group>";
+		};
+		CBA9E75C1FB694D10042ED0D /* Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBA9E75D1FB6950D0042ED0D /* ListClassCollectionViewCell.swift */,
+				CBA9E75E1FB6950D0042ED0D /* ListClassCollectionViewCell.xib */,
+			);
+			path = "Collection View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +232,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA9E75A1FB6944D0042ED0D /* ListClassViewController.xib in Resources */,
+				CBA9E7601FB6950D0042ED0D /* ListClassCollectionViewCell.xib in Resources */,
+				CBA9E74F1FB686EB0042ED0D /* Create.png in Resources */,
+				CBA9E7501FB686EB0042ED0D /* List classes.png in Resources */,
+				CB4B8A3D1FB6FC750089C80E /* ListStudentsViewController.xib in Resources */,
+				CB4B8A421FB7041B0089C80E /* ListStudentsTableViewCell.xib in Resources */,
 				CBA9E73D1FB685C40042ED0D /* LaunchScreen.storyboard in Resources */,
+				CBA9E7521FB686EB0042ED0D /* Update Student.png in Resources */,
+				CBA9E7511FB686EB0042ED0D /* List Students.png in Resources */,
 				CBA9E73A1FB685C40042ED0D /* Assets.xcassets in Resources */,
-				CBA9E7381FB685C40042ED0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +252,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA9E7351FB685C40042ED0D /* ViewController.swift in Sources */,
+				CB4B8A4E1FB7138C0089C80E /* Models.xcdatamodeld in Sources */,
 				CBA9E7331FB685C40042ED0D /* AppDelegate.swift in Sources */,
+				CB4B8A411FB7041B0089C80E /* ListStudentsTableViewCell.swift in Sources */,
+				CB4B8A551FB7142C0089C80E /* Class+CoreDataClass.swift in Sources */,
+				CBA9E7591FB6944D0042ED0D /* ListClassViewController.swift in Sources */,
+				CB4B8A3C1FB6FC750089C80E /* ListStudentsViewController.swift in Sources */,
+				CBA9E75F1FB6950D0042ED0D /* ListClassCollectionViewCell.swift in Sources */,
+				CB4B8A561FB7142C0089C80E /* Class+CoreDataProperties.swift in Sources */,
+				CB4B8A531FB7142C0089C80E /* Students+CoreDataClass.swift in Sources */,
+				CB4B8A541FB7142C0089C80E /* Students+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBA9E7361FB685C40042ED0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBA9E7371FB685C40042ED0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBA9E73B1FB685C40042ED0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -322,6 +438,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB4B8A4C1FB7138C0089C80E /* Models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB4B8A4D1FB7138C0089C80E /* Models.xcdatamodel */,
+			);
+			currentVersion = CB4B8A4D1FB7138C0089C80E /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CBA9E7271FB685C40042ED0D /* Project object */;
 }
