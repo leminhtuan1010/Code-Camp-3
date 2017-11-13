@@ -31,10 +31,12 @@ class CreatStudentViewController: UIViewController {
     }
     fileprivate func createNewStudent(){
         let studentEntity = NSEntityDescription.entity(forEntityName: "Students", in: appDelegate.managedObjectContext)
-        name = txtCreateName.text!
-        adr = txtCreateAddress.text!
+        name = txtCreateName.text! as String
+        adr = txtCreateAddress.text! as String
         let newStudent = Students(studentEntity!, nameStudent: name, address: adr)
         createStudent.append(newStudent)
+        print(name , adr)
+        print(newStudent)
         saveContext()
     }
     fileprivate func saveContext(){

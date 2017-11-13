@@ -42,9 +42,9 @@ class ListStudentsViewController: UIViewController {
         navigationItem.rightBarButtonItem = item
     }
     @objc func createButton(){
-        let secondViewController = CreatStudentViewController.init(nibName: "CreatStudentViewController", bundle: nil)
-        self.navigationController?.pushViewController(secondViewController, animated: true)
-//        creatNewStudent()
+//        let secondViewController = CreatStudentViewController.init(nibName: "CreatStudentViewController", bundle: nil)
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
+        creatNewStudent()
     }
     fileprivate func setupTableView(){
         tableViewStudent.dataSource = self
@@ -55,6 +55,7 @@ class ListStudentsViewController: UIViewController {
         let studentEntity = NSEntityDescription.entity(forEntityName: "Students", in: appDelegate.managedObjectContext)
         let newStudent = Students(studentEntity!, nameStudent: "MinhTuan", address: "ThaiBinh")
         student.append(newStudent)
+        print(newStudent)
         saveContext()
     }
     fileprivate func delete(_ student: Students) {
