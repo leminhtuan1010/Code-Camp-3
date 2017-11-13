@@ -16,6 +16,10 @@
 		CB4B8A541FB7142C0089C80E /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A501FB7142C0089C80E /* Students+CoreDataProperties.swift */; };
 		CB4B8A551FB7142C0089C80E /* Class+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A511FB7142C0089C80E /* Class+CoreDataClass.swift */; };
 		CB4B8A561FB7142C0089C80E /* Class+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A521FB7142C0089C80E /* Class+CoreDataProperties.swift */; };
+		CB4B8A5A1FB750610089C80E /* UpdateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A581FB750610089C80E /* UpdateStudentViewController.swift */; };
+		CB4B8A5B1FB750610089C80E /* UpdateStudentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4B8A591FB750610089C80E /* UpdateStudentViewController.xib */; };
+		CB4B8A5F1FB751380089C80E /* CreatStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B8A5D1FB751380089C80E /* CreatStudentViewController.swift */; };
+		CB4B8A601FB751380089C80E /* CreatStudentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4B8A5E1FB751380089C80E /* CreatStudentViewController.xib */; };
 		CBA9E7331FB685C40042ED0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9E7321FB685C40042ED0D /* AppDelegate.swift */; };
 		CBA9E73A1FB685C40042ED0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E7391FB685C40042ED0D /* Assets.xcassets */; };
 		CBA9E73D1FB685C40042ED0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA9E73B1FB685C40042ED0D /* LaunchScreen.storyboard */; };
@@ -39,6 +43,10 @@
 		CB4B8A501FB7142C0089C80E /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CB4B8A511FB7142C0089C80E /* Class+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CB4B8A521FB7142C0089C80E /* Class+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB4B8A581FB750610089C80E /* UpdateStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStudentViewController.swift; sourceTree = "<group>"; };
+		CB4B8A591FB750610089C80E /* UpdateStudentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateStudentViewController.xib; sourceTree = "<group>"; };
+		CB4B8A5D1FB751380089C80E /* CreatStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatStudentViewController.swift; sourceTree = "<group>"; };
+		CB4B8A5E1FB751380089C80E /* CreatStudentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatStudentViewController.xib; sourceTree = "<group>"; };
 		CBA9E72F1FB685C40042ED0D /* ListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA9E7321FB685C40042ED0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA9E7391FB685C40042ED0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +89,24 @@
 				CB4B8A401FB7041B0089C80E /* ListStudentsTableViewCell.xib */,
 			);
 			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		CB4B8A571FB7501E0089C80E /* Update Student */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A581FB750610089C80E /* UpdateStudentViewController.swift */,
+				CB4B8A591FB750610089C80E /* UpdateStudentViewController.xib */,
+			);
+			path = "Update Student";
+			sourceTree = "<group>";
+		};
+		CB4B8A5C1FB7511C0089C80E /* Create  Student */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B8A5D1FB751380089C80E /* CreatStudentViewController.swift */,
+				CB4B8A5E1FB751380089C80E /* CreatStudentViewController.xib */,
+			);
+			path = "Create  Student";
 			sourceTree = "<group>";
 		};
 		CBA9E7261FB685C40042ED0D = {
@@ -129,6 +155,8 @@
 		CBA9E7451FB686180042ED0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B8A571FB7501E0089C80E /* Update Student */,
+				CB4B8A5C1FB7511C0089C80E /* Create  Student */,
 				CB4B8A391FB6FC430089C80E /* List Student ViewController */,
 				CBA9E75B1FB694BF0042ED0D /* List Class ViewController */,
 			);
@@ -235,6 +263,8 @@
 				CBA9E75A1FB6944D0042ED0D /* ListClassViewController.xib in Resources */,
 				CBA9E7601FB6950D0042ED0D /* ListClassCollectionViewCell.xib in Resources */,
 				CBA9E74F1FB686EB0042ED0D /* Create.png in Resources */,
+				CB4B8A5B1FB750610089C80E /* UpdateStudentViewController.xib in Resources */,
+				CB4B8A601FB751380089C80E /* CreatStudentViewController.xib in Resources */,
 				CBA9E7501FB686EB0042ED0D /* List classes.png in Resources */,
 				CB4B8A3D1FB6FC750089C80E /* ListStudentsViewController.xib in Resources */,
 				CB4B8A421FB7041B0089C80E /* ListStudentsTableViewCell.xib in Resources */,
@@ -252,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4B8A5F1FB751380089C80E /* CreatStudentViewController.swift in Sources */,
 				CB4B8A4E1FB7138C0089C80E /* Models.xcdatamodeld in Sources */,
 				CBA9E7331FB685C40042ED0D /* AppDelegate.swift in Sources */,
 				CB4B8A411FB7041B0089C80E /* ListStudentsTableViewCell.swift in Sources */,
@@ -259,6 +290,7 @@
 				CBA9E7591FB6944D0042ED0D /* ListClassViewController.swift in Sources */,
 				CB4B8A3C1FB6FC750089C80E /* ListStudentsViewController.swift in Sources */,
 				CBA9E75F1FB6950D0042ED0D /* ListClassCollectionViewCell.swift in Sources */,
+				CB4B8A5A1FB750610089C80E /* UpdateStudentViewController.swift in Sources */,
 				CB4B8A561FB7142C0089C80E /* Class+CoreDataProperties.swift in Sources */,
 				CB4B8A531FB7142C0089C80E /* Students+CoreDataClass.swift in Sources */,
 				CB4B8A541FB7142C0089C80E /* Students+CoreDataProperties.swift in Sources */,
@@ -393,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2B4445J52;
 				INFOPLIST_FILE = ListCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ListCoreData.com.ListCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2B4445J52;
 				INFOPLIST_FILE = ListCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ListCoreData.com.ListCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,39 +14,49 @@ class ListClassViewController: UIViewController {
     @IBOutlet weak var classCollection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        cearteClass()
+//        cearteClass()
         setupCollection()
         fetchClass()
-        //        delete()
+//        delete()
     }
     fileprivate func cearteClass(){
         let classEntity = NSEntityDescription.entity(forEntityName: "Class", in: appDelegate.managedObjectContext)!
-        let newClass = Class(classEntity, nameClass: "HTML", ImageClass: "Html")
-        classs.append(newClass)
+        let newIOS = Class(classEntity, nameClass: "IOS", ImageClass: "swift")
+        let newNodeJS = Class(classEntity,nameClass: "Node js", ImageClass: "nodejs")
+        let newArduino = Class(classEntity, nameClass: "Arduino",ImageClass: "arduino")
+        let newJava = Class(classEntity,nameClass: "Java", ImageClass:"java")
+        let newWebsite = Class(classEntity, nameClass: "WebSite", ImageClass: "website")
+        let newHtml = Class(classEntity,nameClass: "HTML", ImageClass: "Html")
+        classs.append(newIOS)
+        classs.append(newNodeJS)
+        classs.append(newArduino)
+        classs.append(newJava)
+        classs.append(newWebsite)
+        classs.append(newHtml)
         saveCoreData()
     }
-    //    fileprivate func delete(){
-    //        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
-    //        let entityDescription = NSEntityDescription.entity(forEntityName: "Class", in: appDelegate.managedObjectContext)
-    //        fetchRequest.entity = entityDescription
-    //        do{
-    //            let result = try appDelegate.managedObjectContext.fetch(fetchRequest) as [AnyObject]
-    //            for a in result as! [NSManagedObject] {
-    //                if let userName = a.value(forKey: "nameClass") as? String {
-    //                    if userName == "IOS" {
-    //                        a.managedObjectContext?.delete(a)
-    //                        do{
-    //                            try a.managedObjectContext?.save()
-    //                        }catch{
-    //                            print(error.localizedDescription)
-    //                        }
-    //                    }
-    //                }
-    //            }
-    //        } catch {
-    //            print(error.localizedDescription)
-    //        }
-    //    }
+        fileprivate func delete(){
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+            let entityDescription = NSEntityDescription.entity(forEntityName: "Class", in: appDelegate.managedObjectContext)
+            fetchRequest.entity = entityDescription
+            do{
+                let result = try appDelegate.managedObjectContext.fetch(fetchRequest) as [AnyObject]
+                for a in result as! [NSManagedObject] {
+                    if let userName = a.value(forKey: "nameClass") as? String {
+                        if userName == "HTML" {
+                            a.managedObjectContext?.delete(a)
+                            do{
+                                try a.managedObjectContext?.save()
+                            }catch{
+                                print(error.localizedDescription)
+                            }
+                        }
+                    }
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     func setupCollection(){
         classCollection.dataSource = self
         classCollection.delegate = self
@@ -88,12 +98,13 @@ extension ListClassViewController: UICollectionViewDataSource{
         classList.configureCell(imge!, name: nam!)
         return classList
     }
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let viewCollection = ListStudentsViewController(nibName: "ListStudentsViewController", bundle: nil)
         let nameCl = classs[indexPath.row].nameClass
         viewCollection.nameClas = nameCl!
         navigationController?.pushViewController(viewCollection, animated: true)
     }
+    
     
 }
 extension ListClassViewController: UICollectionViewDelegateFlowLayout{

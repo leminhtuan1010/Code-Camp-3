@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatStudentViewController" customModule="ListCoreData" customModuleProvider="target">
+            <connections>
+                <outlet property="btnIndexCreate" destination="DOB-35-1hP" id="DnJ-us-0wM"/>
+                <outlet property="txtCreateAddress" destination="Jie-sP-UeN" id="5OC-V0-IVP"/>
+                <outlet property="txtCreateName" destination="iEH-aW-wrV" id="iga-KK-hqf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-aW-wrV">
+                    <rect key="frame" x="55" y="155" width="265" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-sP-UeN">
+                    <rect key="frame" x="55" y="235" width="265" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOB-35-1hP">
+                    <rect key="frame" x="122.5" y="315" width="130" height="30"/>
+                    <state key="normal" title="Create"/>
+                    <connections>
+                        <action selector="btnCreateStudent:" destination="-1" eventType="touchUpInside" id="1nM-MF-KEl"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-5N-pyq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCk-1J-X8i">
+                    <rect key="frame" x="0.0" y="195" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICz-D2-s5r">
+                    <rect key="frame" x="0.0" y="275" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mii-5N-pyq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="155:667" id="4eA-kd-V7g"/>
+                <constraint firstItem="ICz-D2-s5r" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:667" id="7eq-YF-pGJ"/>
+                <constraint firstItem="DOB-35-1hP" firstAttribute="top" secondItem="ICz-D2-s5r" secondAttribute="bottom" id="7wX-am-Iev"/>
+                <constraint firstItem="Mii-5N-pyq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BS4-c2-QCc"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="height" secondItem="Jie-sP-UeN" secondAttribute="height" id="MLM-AS-Bkc"/>
+                <constraint firstItem="Jie-sP-UeN" firstAttribute="top" secondItem="WCk-1J-X8i" secondAttribute="bottom" id="OAT-ad-k3z"/>
+                <constraint firstItem="DOB-35-1hP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SU1-Y2-AhV"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="top" secondItem="Mii-5N-pyq" secondAttribute="bottom" id="Upe-fN-TNG"/>
+                <constraint firstItem="Mii-5N-pyq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VNF-h3-0uG"/>
+                <constraint firstItem="ICz-D2-s5r" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vsr-3r-axV"/>
+                <constraint firstItem="DOB-35-1hP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="30:667" id="XBq-do-N9u"/>
+                <constraint firstItem="WCk-1J-X8i" firstAttribute="top" secondItem="iEH-aW-wrV" secondAttribute="bottom" id="Xsg-fr-8B6"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Z6M-mV-baq"/>
+                <constraint firstItem="WCk-1J-X8i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ayT-AU-pXP"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="width" secondItem="Jie-sP-UeN" secondAttribute="width" id="eZP-kw-D9G"/>
+                <constraint firstItem="WCk-1J-X8i" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:667" id="iAf-Go-Wu2"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:667" id="kAW-Th-KYO"/>
+                <constraint firstItem="WCk-1J-X8i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mk1-Y9-Jjg"/>
+                <constraint firstItem="Jie-sP-UeN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nIS-sZ-I2j"/>
+                <constraint firstItem="Mii-5N-pyq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pjQ-Op-eUp"/>
+                <constraint firstItem="WCk-1J-X8i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="r51-23-13R"/>
+                <constraint firstItem="iEH-aW-wrV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="265:375" id="sSc-Qf-oSP"/>
+                <constraint firstItem="DOB-35-1hP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="130:375" id="u8I-EB-6yj"/>
+                <constraint firstItem="ICz-D2-s5r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uZL-9C-352"/>
+                <constraint firstItem="Mii-5N-pyq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w3u-xz-yKh"/>
+                <constraint firstItem="ICz-D2-s5r" firstAttribute="top" secondItem="Jie-sP-UeN" secondAttribute="bottom" id="wgb-rD-6kV"/>
+                <constraint firstItem="ICz-D2-s5r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zQR-jb-fCh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

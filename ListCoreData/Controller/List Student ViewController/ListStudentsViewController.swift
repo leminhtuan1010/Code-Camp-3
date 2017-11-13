@@ -16,11 +16,19 @@ class ListStudentsViewController: UIViewController {
     var student = [Students]()
     override func viewDidLoad() {
         super.viewDidLoad()
+//        setupTableView()
+//        self.navigationItem.title = nameClas
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+//        leftNvg()
+//        rightNvg()
+    }
+    override func viewWillAppear(_ animated: Bool) {
         setupTableView()
         self.navigationItem.title = nameClas
         self.navigationItem.setHidesBackButton(true, animated: true)
         leftNvg()
         rightNvg()
+        tableViewStudent.reloadData()
     }
     fileprivate func leftNvg(){
         let item = UIBarButtonItem(image: #imageLiteral(resourceName: "back"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(backButton))
@@ -34,7 +42,9 @@ class ListStudentsViewController: UIViewController {
         navigationItem.rightBarButtonItem = item
     }
     @objc func createButton(){
-        creatNewStudent()
+        let secondViewController = CreatStudentViewController.init(nibName: "CreatStudentViewController", bundle: nil)
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+//        creatNewStudent()
     }
     fileprivate func setupTableView(){
         tableViewStudent.dataSource = self
@@ -45,6 +55,10 @@ class ListStudentsViewController: UIViewController {
         let studentEntity = NSEntityDescription.entity(forEntityName: "Students", in: appDelegate.managedObjectContext)
         let newStudent = Students(studentEntity!, nameStudent: "MinhTuan", address: "ThaiBinh")
         student.append(newStudent)
+        saveContext()
+    }
+    fileprivate func delete(_ student: Students) {
+        appDelegate.managedObjectContext.delete(student)
         saveContext()
     }
     fileprivate func saveContext(){
@@ -67,7 +81,24 @@ extension ListStudentsViewController: UITableViewDataSource{
         studentCell.cofig(student[indexPath.row])
         return studentCell
     }
-    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            delete(student[indexPath.row])
+            self.student.remove(at: indexPath.row)
+            self.tableViewStudent.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewUpdate = UpdateStudentViewController(nibName: "UpdateStudentViewController", bundle: nil)
+        let name = student[indexPath.row].nameStudent
+        let address = student[indexPath.row].address
+        viewUpdate.nameSTD = name!
+        viewUpdate.addressSTD = address!
+        navigationController?.pushViewController(viewUpdate, animated: true)
+    }
 }
 extension ListStudentsViewController: UITableViewDelegate{
     
